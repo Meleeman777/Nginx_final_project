@@ -1,0 +1,11 @@
+[Unit]
+Description=Listen 8080 port
+
+[Service]
+User=root
+Type=simple
+ExecStart=/home/user/whoami -port 8080
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
